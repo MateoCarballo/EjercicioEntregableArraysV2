@@ -8,14 +8,14 @@ public class materia {
     int notaMedia=0;
     int filaNotaMinima=0;
     int filaNotaMaxima=0;
-    static int numerodeAlumnos=10;
-    private static String [] alumnos = new String[numerodeAlumnos];
-    private static int [] notas = new int[numerodeAlumnos];
+    int numerodeAlumnos=10;
+    private String [] alumnos = new String[numerodeAlumnos];
+    private int [] notas = new int[numerodeAlumnos];
 
 
 
     public materia(){
-    rellenarCampos();
+        rellenarCampos();
     }
 
 
@@ -28,7 +28,7 @@ public class materia {
         this.alumnos = alumnos;
         this.notas = notas;
     }
-    public static void rellenarCampos(){
+    private void rellenarCampos(){
         String[] nombres = {"Andres","Brais","Carlos","Daniel","Francisco","Elena","Alba","Marta"};
 
         for (int i = 0; i < alumnos.length; i++) {
